@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main페이지</title>
-</head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
     body{
         font-family: 'Nanum Gothic', sans-serif;
     }
@@ -203,79 +196,3 @@
     .catagory_pizza_list{
         position: fixed;
     }
-</style>
-<body>
-    <div class="main_wrap">
-        <div class="top_wrap">
-            <a href="#" class = "pizza_logo"><img class="pizza_logo_img" src="image/pizza_logo.png"></a>
-            <a href="#" class = "pizza_logo_w">TTO</a>
-            <a href="#" class="menu_list"><span>메뉴</span></a>
-            <a href="#" class="order"><span>주문하기</span></a>
-            <a href="#" class="costomer_center"><span>고객센터</span></a>
-            <a href="#" class="event"><span>이벤트</span></a>
-            <a href="#" class="login"><span>로그인</span></a>
-        </div>
-        <div class="section_wrap">
-            <div class="event_button one">
-                <button></button>
-            </div>
-            <div class="main_event1_div">
-                <img class="evnet_banner1" src="image/evnet_banner1.PNG">
-            </div>
-            <div class="event_button two">
-                <button></button>
-            </div>
-            <div class="catagory_pizza_list">
-                <ul>
-                    <li>sdkas</li>
-                    <li>sdkas</li>
-                    <li>sdkas</li>
-                    <li>sdkas</li>
-                    <li>sdkas</li>
-                </ul>
-            </div>
-        </div>
-        <div class="section2_wrap">
-            <div class="find_a_store">
-                <div>
-                    <img src="image/search_icon.png">
-                    <div class="find_a_store_span">
-                        <span>고객님 주위의 매장을 찾아볼까요?</span>
-                        <span>매장 찾기</span>
-                    </div>
-                </div>
-            </div>
-            <div class="member_benefits">
-                <div class="member_benefits_span">
-                    <img src="image/member.png">
-                    <span>혹시 회원이신가요?</span>
-                    <span>회원 혜택</span>
-                </div>
-            </div>
-        </div>
-        <div class="footer_wrap">
-            <div>
-                사업자등록 번호 : 111-111-1111<br>
-                주소 : 서울 서울구 서울로 81 서울타워 주식회사 서울임<br>
-                전화 주문 : 1111-1111<br>
-                Copyright 2022 PIZZA pizza Seoul. All right Reserved<br>
-                FAX : 1111-11111<br>
-            </div>
-            <div class="sns_icon">
-                <div>
-                    <img src="image/instagram.png">
-                    <span>Instagram<br>바로가기</span>
-                </div>
-                <div>
-                    <img src="image/facebook.png">
-                    <span>Facebook<br>바로가기</span>
-                </div>
-                <div>
-                    <img src="image/youtube.png">
-                    <span>Youtube<br>바로가기</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
