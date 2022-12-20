@@ -4,13 +4,16 @@
 <meta charset="UTF-8">
 <title>메인페이지</title>
 <link rel="stylesheet" href="css/mainPageStyle.css">
-<style type="text/css">
-	.modal_login{
+<script type="text/javascript">
+	function getShow(){
+		document.getElementById("modal_login").style.display = "";
 		
 	}
-</style>
-<script type="text/javascript">
 	
+	function getHide(){
+		document.getElementById("modal_login").style.display = "none";
+		
+	}
 </script>
 </head>
 <body>
@@ -22,7 +25,7 @@
             <a href="#" class="order"><span>주문하기</span></a>
             <a href="#" class="costomer_center"><span>고객센터</span></a>
             <a href="#" class="event"><span>이벤트</span></a>
-            <a href="loginPage.html" class="login"><span>로그인</span></a>
+            <a href ="#" class="login" onclick="getShow()"><span>로그인</span></a>
         </div>
         <div class="section_wrap">
             <div class="event_button one">
@@ -87,10 +90,13 @@
         </div>
         
         <!-- 로그인 -->
-        <div class="modal_login">
-      		<div class="modal_body">Modal</div>
+        <div id="modal_login"  style="display:none;">
+        	<div class="modal_login">
+      			<h2>안녕하세요</h2>
+      			<button onclick="getHide()">x</button>
+      		</div>
    		</div>
-    	<button class="btn-open-popup">Modal 띄우기</button>
+     
     </div>
 </body>
 </html>
