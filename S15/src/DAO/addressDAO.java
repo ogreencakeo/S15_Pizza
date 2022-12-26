@@ -1,4 +1,4 @@
-package orderClass;
+package DAO;
 
 public class addressDAO {
 

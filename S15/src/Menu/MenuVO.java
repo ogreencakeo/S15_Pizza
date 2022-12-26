@@ -1,7 +1,9 @@
-package orderClass;
+package Menu;
 
-public class menuVO {
+
+public class MenuVO {
 	
+	private int menuno;
 	private String menuname;
 	private String menudescription;
 	private int menuprice;
@@ -9,11 +11,39 @@ public class menuVO {
 	private String menuorigin;
 	private String menusize;
 	
+	public MenuVO() {
 	
+	}
+	
+	
+	public MenuVO(int menuno, String menuname, String menudescription, int menuprice, String menunutrient,
+			String menuorigin, String menusize) {
+		super();
+		this.menuno = menuno;
+		this.menuname = menuname;
+		this.menudescription = menudescription;
+		this.menuprice = menuprice;
+		this.menunutrient = menunutrient;
+		this.menuorigin = menuorigin;
+		this.menusize = menusize;
+	}
+
+
 	@Override
 	public String toString() {
-		return "menuVO [menuname=" + menuname + ", menudescription=" + menudescription + ", menuprice=" + menuprice
-				+ ", menunutrient=" + menunutrient + ", menuorigin=" + menuorigin + ", menusize=" + menusize + "]";
+		return "MenuVO [menuno=" + menuno + ", menuname=" + menuname + ", menudescription=" + menudescription
+				+ ", menuprice=" + menuprice + ", menunutrient=" + menunutrient + ", menuorigin=" + menuorigin
+				+ ", menusize=" + menusize + "]";
+	}
+
+
+	public int getMenuno() {
+		return menuno;
+	}
+
+
+	public void setMenuno(int menuno) {
+		this.menuno = menuno;
 	}
 
 
@@ -76,6 +106,7 @@ public class menuVO {
 		this.menusize = menusize;
 	}
 	
-	
 
-}
+	
+}	
+	
