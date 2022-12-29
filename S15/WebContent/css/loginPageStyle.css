@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@import
+	url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap')
+	;
+
+body {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+.login_chang{
+			margin-top:100px;
+			border: 1px dotted #979fa8;
+			padding: 10px;
+			width: 800px;
+}
+.a, .aa{
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+.b{
+	margin-bottom: 50px;
+}
+.login_button{
+	background: white;
+	border: 2px solid #8eb1d1;
+}
+.login_button:hover {
+	background-color: black;
+	color: white;
+}
+.a{
+	margin-top: 20px;		
+}
