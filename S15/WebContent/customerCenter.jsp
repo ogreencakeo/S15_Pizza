@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/customerCenterStyle.css">
 	<script type="text/javascript">
 		function readNotice() {
-			window.open("notice_read.jsp", "notice", "width=250, height=300");
+			window.open("notice/notice_read.jsp", "notice", "width=250, height=300");
 		}
 	</script>
 </head>
@@ -24,7 +24,7 @@
 		<div class = "customerCenter_div">
 			<!-- 공지읽기, 쓰기 메뉴 -->
 			<a href="javascript:readNotice()" class="custo_1">1:1 문의 작성 보기</a><br>
-			<a href = "notice_write.jsp" class="custo_2">1:1 문의 적기</a>
+			<a href = "notice/notice_write.jsp" class="custo_2">1:1 문의 적기</a>
 		</div>
 	</center>
 	<%@include file="footer.jsp" %>

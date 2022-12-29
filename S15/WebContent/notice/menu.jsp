@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <% request.setCharacterEncoding("UTF-8"); %>
 <div class="top_wrap">
-        <a href="mainPage.jsp" class = "pizza_logo"><img class="pizza_logo_img" src="image/pizza_logo_img.png"></a>
+        <a href="mainPage.jsp" class = "pizza_logo"><img class="pizza_logo_img" src="../image/pizza_logo_img.png"></a>
         <a href="mainPage.jsp" class = "pizza_logo_w">TTO</a>
         <a href="menuPage.jsp" class="menu_list"><span>메뉴</span></a>
 		<a href="#" class="order"><span>게시판</span></a>

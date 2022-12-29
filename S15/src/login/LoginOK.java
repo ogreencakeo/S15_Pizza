@@ -31,7 +31,7 @@ public class LoginOK extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("doGet()");
+		//System.out.println("doGet()");
 	}
 
 
@@ -47,11 +47,12 @@ public class LoginOK extends HttpServlet {
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
 		
-		String sql="select * from member where id = ?'" + id + "' and pw = ?'" + pw + "'";
+		String sql="select * from member where id ='" + id + "' and pw ='" + pw + "'";
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/practicedb", "root", "1234");
+			
 			st = conn.createStatement();
 			rs = st.executeQuery(sql);
 			
@@ -68,7 +69,7 @@ public class LoginOK extends HttpServlet {
 			response.sendRedirect("loginResult.jsp");
 			
 		}catch(Exception e) {
-			
+			e.printStackTrace();
 		}finally {
 			
 			try {

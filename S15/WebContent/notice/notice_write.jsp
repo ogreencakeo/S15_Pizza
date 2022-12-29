@@ -28,11 +28,11 @@
 <head>
 <meta charset="UTF-8">
 <title>공지사항</title>
-	<link rel="stylesheet" href="mainAndFooter.css">
+	<link rel="stylesheet" href="../css/mainAndFooter.css">
 </head>
 <body>
 	<div class="main_wrap">
-		<%@include file="../menu.jsp" %>
+		<%@include file="menu.jsp" %>
 	</div>	
 	<center>
 		<h2>오늘의 공지사항</h2>
@@ -66,7 +66,7 @@
 			</table>
 		</form>
 	</center>
-	<%@include file="/footer.jsp" %>
+	<%@include file="footer.jsp" %>
 
 </body>
 </html>

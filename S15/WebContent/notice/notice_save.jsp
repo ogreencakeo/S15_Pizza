@@ -27,17 +27,14 @@
  		%>
  		<script type="text/javascript">
 			alert("글 내용과 공지 내용을 입력하시오!");
+			history.go(-1);
 		</script>
  		<%
- 		 out.println("<a href = notice_write.jsp>돌아가기</a>");
  		return;
+ 		
  	}
  	
- 	// 파일 절대 경로 구하기
- 	// request 객체에 getRealPath("/notice");
- 	// config 내장 객체 getServletContext() 메소드 
- 	// ServletContext ctx = config.getServletContext();
- 	
+ 	ServletContext ctx = config.getServletContext();
  	String allPath = request.getRealPath("/notice");
  	out.println("공지사항 저장될 경로 : " + allPath);
  	

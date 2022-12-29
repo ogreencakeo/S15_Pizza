@@ -11,6 +11,10 @@
 		function pizzamenu_move{
 			location.href="<%=request.getContextPath()%>menuPage.jsp";
 		}
+		function check_event() {
+			alert("이벤트 페이지에서 확인해주세요");
+		}
+		</script>
 	</script>
 </head>
 <body>
@@ -22,7 +26,7 @@
 			<h2>메뉴</h2>
 			<a href="menuPage.jsp">피자메뉴</a>
 			<a href="pizzaSin.jsp">신메뉴</a>
-			<a href="pizzaSale.jsp">스페셜&할인</a>
+			<a href ="eventPage.jsp" onclick="check_event()">스페셜&할인</a>
 		</div>
 		<div class="menuPage_img_div">
 			<div class="menuPage_img one">
