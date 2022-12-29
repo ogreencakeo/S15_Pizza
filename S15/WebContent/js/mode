@@ -1,7 +1,0 @@
-function getShow(){
-			document.getElementById("modal_login").style.display = "";
-}
-
-function getHide(){
-	document.getElementById("modal_login").style.display = "none";
-}
