@@ -23,7 +23,7 @@
 	<center>
 		<div class = "customerCenter_div">
 			<!-- 공지읽기, 쓰기 메뉴 -->
-			<a href="javascript:readNotice()" class="custo_1">1:1 문의 작성 보기</a><br>
+			<a href="javascript:readNotice()" class="custo_1">작성한 문의 내용 보기</a><br>
 			<a href = "notice/notice_write.jsp" class="custo_2">1:1 문의 적기</a>
 		</div>
 	</center>

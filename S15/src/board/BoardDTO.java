@@ -1,17 +1,15 @@
 package board;
 
-public class Bdto {
+public class BoardDTO {
+	private String bname;
+	private String btitle;
+	private String bcontent;
 	
-	String bname;
-	String btitle;
-	String bcontent;
-	
-	public Bdto() {
+	public BoardDTO() {
 	}
 
 
-	public Bdto(String bname, String btitle, String bcontent) {
-		super();
+	public BoardDTO(String bname, String btitle, String bcontent) {
 		this.bname = bname;
 		this.btitle = btitle;
 		this.bcontent = bcontent;
@@ -40,7 +38,6 @@ public class Bdto {
 	public void setBcontent(String bcontent) {
 		this.bcontent = bcontent;
 	}
-	
 	
 
 }

@@ -21,7 +21,7 @@
 		<%@include file="menu.jsp" %>
 	</div>
 	<center>
-		<hr>
+		<hr style="margin-top: 100px;">
 		<b><%=id%>님 환영합니다.</b>
 		<hr>
 	</center>

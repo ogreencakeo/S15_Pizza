@@ -7,9 +7,6 @@
 	int mm = cal.get(Calendar.MONTH)+1;
 	int dd = cal.get(Calendar.DAY_OF_MONTH);
 	
-	out.println("<font color=red><b>");
-	out.println(yy+"년"+mm+"월"+dd+"일");
-	out.println("</b></font>");
 	
 	String fname = yy+"";
 	if(mm<10)
@@ -35,19 +32,19 @@
 		<%@include file="menu.jsp" %>
 	</div>	
 	<center>
-		<h2>오늘의 공지사항</h2>
+		<h2 style="margin-top: 100px;">문의 내용을 적어주새요</h2>
 		<form action="notice_save.jsp" method="post">
 			<table border=1 width=500>
 				<tr>
 					<th>제목</th>
 					<td>
-						<input type="text" name="title"/>
+						<input type="text" name="title" size="60"/>
 					</td>
 				</tr>
 				<tr>
-					<th>공지내용</th>
+					<th>문의<br>내용</th>
 					<td>
-						<textarea name="info" rows="5" cols="50"></textarea> 
+						<textarea name="info" rows="5" cols="62"></textarea> 
 					</td>
 				</tr>
 				<tr>
@@ -65,6 +62,12 @@
 				</tr>
 			</table>
 		</form>
+		<br/><br/>
+		<%
+				out.println("<font color=green><b>");
+				out.println(yy+"년"+mm+"월"+dd+"일");
+				out.println("</b></font>");
+		%>
 	</center>
 	<%@include file="footer.jsp" %>
 

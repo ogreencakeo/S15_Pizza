@@ -20,6 +20,7 @@ DataSource dataSource;
 		try {
 			Context context = new InitialContext();
 			dataSource = (DataSource)context.lookup("java:comp/env/jdbc/mysql");
+			
 		} catch (Exception e) {			
 			e.printStackTrace();
 		}		
@@ -65,7 +66,7 @@ DataSource dataSource;
 		
 		try {
 			conn = dataSource.getConnection();
-			String sql ="insert into board(bname, btitle, bcontent) "
+			String sql ="insert into board(bname, btitle, bcontent)"
 					+ "values(?,?,?)";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, bname);
